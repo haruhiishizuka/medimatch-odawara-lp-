@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Sparkles, MapPin, Heart } from 'lucide-react';
+import { Sparkles, MapPin, MessageCircle, Users } from 'lucide-react';
 
 export default function HeroSection() {
   return (
@@ -134,7 +134,7 @@ export default function HeroSection() {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <button className="btn-primary flex items-center justify-center gap-3 text-lg group">
-                <Heart className="w-6 h-6 group-hover:animate-pulse" />
+                <MessageCircle className="w-6 h-6 group-hover:animate-pulse" />
                 <span>LINEで無料相談</span>
               </button>
               <div className="flex flex-col items-center sm:items-start text-sm text-gray-600">
@@ -179,10 +179,10 @@ export default function HeroSection() {
               {/* Placeholder for hero image */}
               <div className="absolute inset-0 bg-gradient-to-br from-serenity-blue to-powder-pink flex items-center justify-center">
                 <div className="text-center text-white p-8">
-                  <Heart className="w-24 h-24 mx-auto mb-4 opacity-50" />
-                  <p className="text-lg font-medium">Hero Image</p>
+                  <Users className="w-24 h-24 mx-auto mb-4 opacity-50" />
+                  <p className="text-lg font-medium">あなた専属のコンシェルジュが</p>
                   <p className="text-sm opacity-75 mt-2">
-                    小田原の海辺と笑顔の看護師
+                    小田原の医療機関と直接交渉します
                   </p>
                 </div>
               </div>

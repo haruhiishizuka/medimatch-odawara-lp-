@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Heart, MessageCircle, Target, Sparkles } from 'lucide-react';
+import { CheckCircle, MessageCircle, Target, Sparkles } from 'lucide-react';
 
 const features = [
   {
@@ -17,7 +17,7 @@ const features = [
     description: '公開されていない求人や、条件のカスタマイズを私たちが直接交渉。「求人票に合わせる」のではなく、「あなたに合う席」を作ります。',
   },
   {
-    icon: Heart,
+    icon: CheckCircle,
     title: 'マッチング',
     subtitle: 'オーダーメイドの提案',
     description: '画一的な求人票ではなく、あなた専用にカスタマイズされた提案をお届け。本当に納得できる選択肢を提供します。',
@@ -31,11 +31,11 @@ export default function PhilosophySection() {
       <div className="absolute inset-0 opacity-5">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <pattern id="heart-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-              <path d="M50 30 C50 20, 40 10, 30 10 C20 10, 10 20, 10 30 C10 45, 25 60, 50 80 C75 60, 90 45, 90 30 C90 20, 80 10, 70 10 C60 10, 50 20, 50 30 Z" fill="currentColor" className="text-serenity-blue" />
+            <pattern id="dot-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+              <circle cx="20" cy="20" r="3" fill="currentColor" className="text-serenity-blue" />
             </pattern>
           </defs>
-          <rect width="100%" height="100%" fill="url(#heart-pattern)" />
+          <rect width="100%" height="100%" fill="url(#dot-pattern)" />
         </svg>
       </div>
 
@@ -80,7 +80,7 @@ export default function PhilosophySection() {
             <div className="flex items-start gap-4 mb-6">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 rounded-full bg-gradient-pink flex items-center justify-center">
-                  <Heart className="w-6 h-6 text-white" />
+                  <MessageCircle className="w-6 h-6 text-white" />
                 </div>
               </div>
               <div>

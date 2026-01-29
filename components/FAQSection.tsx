@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { HelpCircle, Plus, Minus, Shield, Heart } from 'lucide-react';
+import { HelpCircle, Plus, Minus, Shield, Users } from 'lucide-react';
 
 const faqs = [
   {
@@ -140,7 +140,7 @@ export default function FAQSection() {
           </div>
           <div className="bg-white rounded-2xl shadow-soft p-6 md:p-8 flex items-start gap-4">
             <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-powder-pink/10 flex items-center justify-center">
-              <Heart className="w-6 h-6 text-powder-pink" />
+              <Users className="w-6 h-6 text-powder-pink" />
             </div>
             <div>
               <h3 className="font-bold text-gray-800 mb-2 text-lg">あなたの味方です</h3>
